@@ -11,8 +11,16 @@
     <section class="login">
       <h3 class="visually-hidden">Log in section</h3>
 
-      <input class="login-input" type="text" placeholder="What is your name?" />
-      <button class="login-button">Log in</button>
+      <form class="login-form" action="">
+        <input
+          class="login-input"
+          type="submit"
+          placeholder="What is your name?"
+          required
+          maxlength="15"
+        />
+        <button class="login-button" type="submit">Log in</button>
+      </form>
     </section>
 
     <script src="./app.js"></script>
