@@ -60,3 +60,10 @@ const quotes = [
     author: 'Buddha',
   },
 ]
+
+const quote = document.querySelector('p.quote')
+const author = document.querySelector('p.author')
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
+
+quote.innerHTML = todaysQuote.quote
+author.innerHTML = todaysQuote.author
