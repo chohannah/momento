@@ -90,3 +90,11 @@ const backgrounds = [
     author: 'Sean Oulashin',
   },
 ]
+
+const selectedBackgrounds =
+  backgrounds[Math.floor(Math.random() * backgrounds.length)]
+const background = document.createElement('img')
+
+background.src = `${selectedBackgrounds.url}`
+
+document.body.appendChild(background)
